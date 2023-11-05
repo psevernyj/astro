@@ -1,0 +1,36 @@
+@import "mixinsAndVariables";
+
+.accordion {
+  margin: 10px;
+  .accordionHeader {
+    background-color: $light-gray;
+    padding: 20px 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+
+    span {
+      flex: 1;
+    }
+
+    .arrow {
+      width: 20px;
+      height: 20px;
+      transition: transform 0.3s; /* Add transition */
+      transform: rotate(0deg);
+    }
+  }
+
+  .accordionHeader.open {
+    .arrow {
+      transform: rotate(90deg); /* Rotate the arrow when open */
+    }
+  }
+
+  .accordionContent {
+    padding: 20px 30px;
+  }
+}
+

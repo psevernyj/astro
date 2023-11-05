@@ -1,0 +1,28 @@
+@import "mixinsAndVariables";
+
+.aboutMe {
+  .textBold48{
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  .content {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 60px;
+
+    .text18{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .portrait{
+      width: 100%;
+      height: auto;
+    }
+    .socialMedia{
+      margin-top: 20px;
+      display: flex;
+      gap: 10px;
+    }
+  }
+}

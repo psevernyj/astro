@@ -1,0 +1,25 @@
+@import "mixinsAndVariables";
+
+.whatIf{
+  .content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .whatIfTitle{
+    width: 193px;
+    height: 41px;
+    border: 2px solid $orange;
+    color: $orange;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+  }
+  .whatICard{
+    padding: 25px;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    height: 300px;
+  }
+}

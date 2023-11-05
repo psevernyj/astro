@@ -1,0 +1,33 @@
+@import "mixinsAndVariables";
+
+.footer{
+  .content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .left{
+    .textBold28{
+      margin-bottom: 10px;
+    }
+    .socialMedia{
+      margin-top: 20px;
+      display: flex;
+      gap: 10px;
+    }
+  }
+  .right{
+    .navigationList{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .navigationItem{
+        cursor: pointer;
+      }
+    }
+  }
+  .incTitle{
+    text-align: center;
+    padding-top: 30px;
+  }
+}

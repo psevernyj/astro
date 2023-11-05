@@ -1,0 +1,50 @@
+@import "./mixinsAndVariables";
+
+.firstScreen{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    filter: blur(30px);
+
+    .l,
+    .r {
+      position: absolute;
+      top: 0;
+      width: 50%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .l {
+      left: 0;
+    }
+
+    .r {
+      right: 0;
+    }
+  }
+
+  .content{
+    text-align: center;
+    z-index: 2;
+  }
+  .generalTitle{
+    padding-bottom: 38px;
+  }
+  .generalSubtitle{
+    padding-bottom: 68px;
+  }
+  .primaryBtn{
+    margin-bottom: 10px;
+  }
+}
