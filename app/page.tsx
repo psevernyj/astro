@@ -6,6 +6,7 @@ import TypesOfConsultation from "@/app/components/TypesOfConsultation";
 import WhatIf from "@/app/components/WhatIf";
 import Cases from "@/app/components/Cases";
 import Faq from "@/app/components/Faq";
+import Map from "@/app/components/Map";
 
 export default function Home() {
     return <div className={"homePage"}>
@@ -13,6 +14,7 @@ export default function Home() {
         <AboutMe/>
         <WhatWillYouGet/>
         <TypesOfConsultation/>
+        <Map/>
         <WhatIf/>
         <Cases/>
         <Faq/>

@@ -5,7 +5,7 @@ import Image from "next/image";
 import {Swiper, SwiperSlide} from 'swiper/react';
 import parse from 'html-react-parser';
 import "../styles/typesOfConsultation.scss";
-import quote from "../assets/skob.svg";
+import quote from "../assets/heart.svg";
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -14,14 +14,11 @@ import 'swiper/css/navigation';
 import { Pagination, Navigation } from 'swiper/modules';
 const TypesOfConsultation = () => {
     return (
-        <div className={"bgWrapper"}>
+        // <div className={"bgWrapper"}>
             <div className={"main container typesOfConsultation wrapper"}>
                 <h2 className={"textBold48"}>
                     види консультацій
                 </h2>
-                <p className={"text18"}>
-                    обери свою
-                </p>
                 <div className={"cards"}>
                     <Swiper
                         spaceBetween={30}
@@ -67,7 +64,7 @@ const TypesOfConsultation = () => {
                     </Swiper>
                 </div>
             </div>
-        </div>
+        // </div>
     );
 };
 

@@ -1,0 +1,61 @@
+@import "./mixinsAndVariables";
+
+.map {
+  .mapTitle {
+    width: 193px;
+    height: 41px;
+    border: 2px solid $yellow;
+    color: $yellow;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 40px auto;
+  }
+
+  .mapPoints {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .point{
+    border-radius: 47.409px;
+    box-shadow: 8.051px 24.152px 89.45px -11.629px rgba(22, 52, 80, 0.10);
+    padding: 30px 20px;
+    max-width: 300px;
+    height: 200px;
+    background-color: $light-gray;
+
+    &:first-child{
+      background-image: url("../assets/icon1.svg");
+      background-position: right bottom;
+      background-size: 125px;
+      background-repeat: no-repeat;
+    }
+
+    &:nth-child(3){
+      background-image: url("../assets/icon2.svg");
+      background-position: right bottom;
+      background-size: 170px;
+      background-repeat: no-repeat;
+    }
+
+    &:nth-child(5){
+      background-image: url("../assets/icon3.svg");
+      background-position: right bottom;
+      background-size: 125px;
+      background-repeat: no-repeat;
+    }
+
+      .socialMedia{
+        margin-top: 20px;
+        display: flex;
+        justify-content: start;
+        gap: 10px;
+      }
+  }
+
+}
