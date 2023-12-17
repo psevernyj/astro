@@ -1,8 +1,10 @@
+'use client'
 import React from 'react';
 import "../styles/firstScreen.scss";
 import Image from "next/image";
 import lhand from"../assets/hand1.png";
 import rhand from"../assets/hand2.png";
+import {openExternalTab} from "@/helpers/openInNewTab";
 
 const FirstScreen = () => {
     return (
@@ -19,8 +21,8 @@ const FirstScreen = () => {
                 <p className={"generalSubtitle"}>
                     паспорт у світ, де ви володар
                 </p>
-                <button className={"primaryBtn"}>консультація</button><br/>
-                <button className={"secondaryBtn"}>гортай далі</button>
+                <button className={"primaryBtn"} onClick={openExternalTab("https://t.me/bogdanavolkovank")}>консультація</button><br/>
+                {/*<button className={"secondaryBtn"}>гортай далі</button>*/}
             </div>
         </div>
     );

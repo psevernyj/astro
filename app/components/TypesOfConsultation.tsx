@@ -15,7 +15,7 @@ import { Pagination, Navigation } from 'swiper/modules';
 const TypesOfConsultation = () => {
     return (
         // <div className={"bgWrapper"}>
-            <div className={"main container typesOfConsultation wrapper"}>
+            <div className={"main container typesOfConsultation wrapper"} id={"typesOfConsultation"}>
                 <h2 className={"textBold48"}>
                     види консультацій
                 </h2>

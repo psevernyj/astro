@@ -4,7 +4,7 @@ import "../styles/whatWillYouGet.scss";
 
 const WhatWillYouGet = () => {
     return (
-        <div className={"main container whatWillYouGet"}>
+        <div className={"main container whatWillYouGet"} id={"whatWillYouGet"}>
             <h2 className={"textBold48"}>
                 що ти отримаєш
             </h2>

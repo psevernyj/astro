@@ -1,13 +1,15 @@
+'use client'
 import Image from "next/image";
 import photo from "../assets/port2.jpeg";
 import inst from "../assets/instagram.png";
 import tel from "../assets/telegram.png";
 import React from "react";
 import "../styles/aboutMe.scss";
+import {openExternalTab} from "@/helpers/openInNewTab";
 
 const AboutMe = () => {
     return (
-        <div className={"main container aboutMe wrapper"}>
+        <div className={"main container aboutMe wrapper"}  id="aboutMe">
             <div className={"content"}>
                 <div className={"text"}>
                     <h2 className={"textBold48"}>
@@ -52,8 +54,12 @@ const AboutMe = () => {
                         </p>
                     </div>
                     <div className={"socialMedia"}>
-                        <Image src={inst} alt={"Join to my Instagram"} width={20}/>
-                        <Image src={tel} alt={"Join to my Telegram"} width={20}/>
+                        <div onClick={openExternalTab("https://www.instagram.com/astro_about_you/")}>
+                            <Image src={inst} alt={"Join to my Instagram"} width={20}/>
+                        </div>
+                        <div onClick={openExternalTab("https://t.me/bogdanavolkovank")}>
+                            <Image src={tel} alt={"Join to my Telegram"} width={20}/>
+                        </div>
                     </div>
                 </div>
                 <Image className={"portrait"} src={photo} alt={"Bohdana"}/>

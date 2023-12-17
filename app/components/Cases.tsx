@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Cases = () => {
     return (
-        <div className={"main container cases wrapper"}>
+        <div className={"main container cases wrapper"} id={"cases"}>
             <h2 className={"tagTitle textBold24"}>
                 #кейси
             </h2>

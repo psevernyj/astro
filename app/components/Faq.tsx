@@ -17,7 +17,7 @@ const Faq = () => {
     };
 
     return (
-        <div className={"faq wrapper container"}>
+        <div className={"faq wrapper container"} id={"faq"}>
             <h2 className={"textBold48"}>FAQ</h2>
             <div className={"content"}>
                 {faqList.map((question, index) =>

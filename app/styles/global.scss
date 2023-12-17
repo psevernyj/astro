@@ -29,11 +29,12 @@
   font-weight: 700;
   line-height: 1.2;
   height: auto;
+  @include adaptive-value(font-size, 48, 32, 1);
 }
 
 .textBold48 {
   color: $primary-text;
-  font-size: 48px;
+  @include adaptive-value(font-size, 48, 32, 1);
   font-weight: 700;
   height: auto;
   line-height: 1.2;
@@ -44,7 +45,7 @@
 
 .textBold24 {
   color: $primary-text;
-  font-size: 24px;
+  @include adaptive-value(font-size, 24, 16, 1);
   font-weight: 700;
   height: auto;
   line-height: 1.2;
@@ -53,7 +54,7 @@
 }
 .text24 {
   color: $primary-text;
-  font-size: 24px;
+  @include adaptive-value(font-size, 24, 16, 1);
   font-weight: 500;
   height: auto;
   line-height: 1.2;
@@ -63,7 +64,7 @@
 
 .textBold28 {
   color: $primary-text;
-  font-size: 28px;
+  @include adaptive-value(font-size, 28, 18, 1);
   font-weight: 700;
   height: auto;
   line-height: 1.2;
@@ -71,8 +72,8 @@
 }
 
 .text18 {
+  @include adaptive-value(font-size, 18, 14, 1);
   color: $secondary-text;
-  font-size: 18px;
   font-weight: 400;
   line-height: 1.6;
   height: auto;
@@ -89,12 +90,14 @@
 .text16{
   color: $secondary-text;
   font-size: 16px;
+  @include adaptive-value(font-size, 16, 14, 1);
   letter-spacing: 0;
   line-height: 1.6;
 }
 
 .text15{
   font-size: 15px;
+  @include adaptive-value(font-size, 15, 14, 1);
   font-weight: 600;
   height: auto;
   line-height: 1.4;

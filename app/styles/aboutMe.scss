@@ -23,6 +23,17 @@
       margin-top: 20px;
       display: flex;
       gap: 10px;
+      div{
+        cursor: pointer;
+      }
     }
+  }
+  @media only screen and (max-width: 1220px) {
+    .content{
+      .text18{
+        //font-size: 16px;
+      }
+    }
+
   }
 }

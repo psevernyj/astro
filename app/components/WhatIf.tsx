@@ -4,7 +4,7 @@ import "../styles/whatIf.scss";
 
 const WhatIf = () => {
     return (
-        <div className={"main container whatIf wrapper"}>
+        <div className={"main container whatIf wrapper"} id={"whatIf"}>
             <h2 className={"whatIfTitle textBold48"}>
                 що якщо..
             </h2>

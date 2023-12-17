@@ -55,6 +55,9 @@
         display: flex;
         justify-content: start;
         gap: 10px;
+        div{
+          cursor: pointer;
+        }
       }
   }
 
