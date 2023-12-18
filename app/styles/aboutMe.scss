@@ -9,6 +9,7 @@
     display: grid;
     grid-template-columns: 1.1fr 1fr;
     gap: 60px;
+    align-items: center;
 
     .text18{
       display: flex;
@@ -19,6 +20,9 @@
       width: 100%;
       height: auto;
     }
+    .portraitMob{
+      display: none;
+    }
     .socialMedia{
       margin-top: 20px;
       display: flex;
@@ -28,10 +32,21 @@
       }
     }
   }
-  @media only screen and (max-width: 1220px) {
+  @media only screen and (max-width: 1024px) {
     .content{
-      .text18{
-        //font-size: 16px;
+      grid-template-columns: 1fr;
+      grid-gap: 20px;
+      .portrait{
+        display: none;
+      }
+      .portraitMob{
+        display: block;
+        order: 1;
+        height: auto;
+        width: 100%;
+      }
+      .text{
+        order: 2;
       }
     }
 

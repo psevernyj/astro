@@ -24,7 +24,7 @@
     background-color: $light-gray;
     .cardImg{
       width: 100%;
-      height: 200px;
+      height: 145px;
       object-fit: cover;
       border-radius: 8px 8px 0 0;
     }
@@ -35,6 +35,15 @@
         text-transform: uppercase;
       }
     }
-
+  }
+  @media only screen and (max-width: 1024px){
+    .content{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media only screen and (max-width: 540px){
+    .content{
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 }

@@ -1,17 +1,5 @@
 @import "mixinsAndVariables";
 
-.bgWrapper {
-  width: 100%;
-  height: 100%;
-  //background-color: $light-gray;
-  background-image: url("../assets/glow-bg.png");
-  object-fit: cover;
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: 100%;
-  //background-color: rgba(255, 255, 255, 0.8);
-}
-
 .typesOfConsultation {
   .text18 {
     text-align: center;
@@ -23,19 +11,9 @@
     min-height: 381px;
     position: relative;
     margin: auto;
-    //background-color: rgb(255 255 255 / 100%);
-    //box-shadow: -3px 2px 15px -3px rgba(0,0,0,0.1);
-    //backdrop-filter: blur(18px);
-    //-webkit-backdrop-filter: blur(18px);
-    //border: 1px solid rgba(255, 255, 255, 0.18);
-    //border-radius: 1rem;
     border-radius: 47.409px;
     box-shadow: 8.051px 24.152px 89.45px -11.629px rgba(22, 52, 80, 0.10);
-    //padding: 30px 20px;
-    //max-width: 300px;
-    //height: 200px;
     background-color: $light-gray;
-
     z-index: 10;
     color: whitesmoke;
 
@@ -81,20 +59,16 @@
 
       .body {
         display: grid;
-        grid-gap: 30px;
-        grid-template-columns: 2fr 1fr;
-        //align-items: center;
+        grid-gap: 120px;
+        grid-template-columns: 1.5fr 1fr;
       }
 
       .description{
         position: relative;
         .quoteIcon{
           position: absolute;
-          //top: -31px;
-          //left: -38px;
-          top: -69px;
-          left: -156px;
-          //width: 100px;
+          top: 55px;
+          left: -201px;
           z-index: -1;
         }
       }
@@ -132,20 +106,114 @@
     }
 
   }
-}
 
-.swiper-button-next, .swiper-button-prev {
-  color: $gray !important;
+  .swiper{
+    height: 500px;
+  }
+  .swiper-button-next, .swiper-button-prev {
+    color: $gray !important;
 
-  &:after {
-    font-size: 20px !important;
+    &:after {
+      font-size: 20px !important;
+    }
+  }
+
+  .swiper-pagination-bullet {
+    background-color: $gray !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: $orange !important;
+  }
+
+  @media only screen and (max-width: 1040px){
+    .swiper{
+      height: 475px;
+    }
+    .card{
+      max-width: 850px;
+    }
+  }
+
+  @media only screen and (max-width: 1040px){
+    .card{
+      max-width: 760px;
+      .content{
+        .body{
+          grid-gap: 30px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 840px){
+    .swiper{
+      height: 550px;
+    }
+    .card{
+      max-width: 555px;
+      min-height: 440px;
+      .priceTitle{
+        bottom: 20px;
+        right: 30px;
+      }
+      .content{
+        padding: 40px 20px;
+        .header{
+          .hint{
+            top: 38px;
+            right: 23px;
+          }
+        }
+        .body{
+         grid-template-columns: 1fr;
+          .description{
+            order: 1;
+            .quoteIcon{
+              top: 8px;
+              left: 381px;
+              width: 150px;
+              height: auto;
+            }
+          }
+          .benefits{
+            max-width: 470px;
+            order: 2;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 650px){
+    .swiper{
+      height: 675px;
+    }
+    .card{
+      max-width: 300px;
+      min-height: 515px;
+      .content{
+        .header{
+          margin-bottom: 30px;
+          .hint{
+            top: 68px;
+            right: 40px;
+          }
+        }
+        .body{
+          grid-gap: 10px;
+          .description{
+            .quoteIcon{
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 510px){
+    .swiper{
+      height: 600px;
+    }
   }
 }
 
-.swiper-pagination-bullet {
-  background-color: $gray !important;
-}
-
-.swiper-pagination-bullet-active {
-  background-color: $orange !important;
-}

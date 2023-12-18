@@ -19,8 +19,8 @@
   flex: 1;
 }
 .wrapper{
-  padding-top: 60px;
-  padding-bottom: 60px;
+  @include adaptive-value(padding-top, 60, 30, 1);
+  @include adaptive-value(padding-bottom, 60, 30, 1);
 }
 
 .title {
@@ -35,11 +35,11 @@
 .textBold48 {
   color: $primary-text;
   @include adaptive-value(font-size, 48, 32, 1);
+  @include adaptive-value(margin-bottom, 60, 30, 1);
   font-weight: 700;
   height: auto;
   line-height: 1.2;
   letter-spacing: 0;
-  margin-bottom: 60px;
   text-align: center;
 }
 
@@ -54,7 +54,7 @@
 }
 .text24 {
   color: $primary-text;
-  @include adaptive-value(font-size, 24, 16, 1);
+  @include adaptive-value(font-size, 24, 14, 1);
   font-weight: 500;
   height: auto;
   line-height: 1.2;
@@ -81,7 +81,7 @@
 
 .textLight18{
   color: $primary-text;
-  font-size: 18px;
+  @include adaptive-value(font-size, 18, 14, 1);
   font-weight: 300;
   height: auto;
   line-height: 1.4;
@@ -90,7 +90,7 @@
 .text16{
   color: $secondary-text;
   font-size: 16px;
-  @include adaptive-value(font-size, 16, 14, 1);
+  @include adaptive-value(font-size, 16, 13, 1);
   letter-spacing: 0;
   line-height: 1.6;
 }
@@ -98,6 +98,7 @@
 .text15{
   font-size: 15px;
   @include adaptive-value(font-size, 15, 14, 1);
+  color: $secondary-text;
   font-weight: 600;
   height: auto;
   line-height: 1.4;
@@ -121,6 +122,8 @@
   font-weight: 700;
   line-height: 1.4;
   text-align: center;
+  @include adaptive-value(width, 193, 150, 1);
+  @include adaptive-value(font-size, 15, 13, 1);
 }
 .secondaryBtn{
   width: 193px;
@@ -132,6 +135,8 @@
   font-weight: 700;
   line-height: 1.4;
   border-radius: 8px;
+  @include adaptive-value(width, 193, 150, 1);
+  @include adaptive-value(font-size, 15, 13, 1);
 }
 
 

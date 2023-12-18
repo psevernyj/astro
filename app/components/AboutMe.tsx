@@ -1,6 +1,7 @@
 'use client'
 import Image from "next/image";
 import photo from "../assets/port2.jpeg";
+import photoMob from "../assets/port2mobile.jpg";
 import inst from "../assets/instagram.png";
 import tel from "../assets/telegram.png";
 import React from "react";
@@ -9,7 +10,7 @@ import {openExternalTab} from "@/helpers/openInNewTab";
 
 const AboutMe = () => {
     return (
-        <div className={"main container aboutMe wrapper"}  id="aboutMe">
+        <div className={"container aboutMe wrapper"}  id="aboutMe">
             <div className={"content"}>
                 <div className={"text"}>
                     <h2 className={"textBold48"}>
@@ -63,6 +64,7 @@ const AboutMe = () => {
                     </div>
                 </div>
                 <Image className={"portrait"} src={photo} alt={"Bohdana"}/>
+                <Image className={"portraitMob"} src={photoMob} alt={"Bohdana"}/>
             </div>
         </div>
     );

@@ -8,7 +8,7 @@ import {openExternalTab} from "@/helpers/openInNewTab";
 
 const FirstScreen = () => {
     return (
-        <div className={"main container firstScreen"}>
+        <div className={"container firstScreen"}>
             <div className={"bg"}>
                 <Image className={"l"} src={lhand} alt={"Background"}/>
                 <Image className={"r"} src={rhand} alt={"Background"}/>

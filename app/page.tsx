@@ -9,7 +9,7 @@ import Faq from "@/app/components/Faq";
 import Map from "@/app/components/Map";
 
 export default function Home() {
-    return <div className={"homePage"}>
+    return <div className={"homePage main"}>
         <FirstScreen/>
         <AboutMe/>
         <WhatWillYouGet/>

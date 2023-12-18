@@ -14,8 +14,7 @@ import 'swiper/css/navigation';
 import { Pagination, Navigation } from 'swiper/modules';
 const TypesOfConsultation = () => {
     return (
-        // <div className={"bgWrapper"}>
-            <div className={"main container typesOfConsultation wrapper"} id={"typesOfConsultation"}>
+            <div className={"typesOfConsultation wrapper"} id={"typesOfConsultation"}>
                 <h2 className={"textBold48"}>
                     види консультацій
                 </h2>
@@ -48,7 +47,7 @@ const TypesOfConsultation = () => {
                                                 </div>
                                             </div>
                                             <div className={"body"}>
-                                                <div className={"text16"}>
+                                                <div className={"benefits text16"}>
                                                     {parse(block.benefits)}
                                                 </div>
                                                 <div className={"description text16"}>
@@ -64,7 +63,6 @@ const TypesOfConsultation = () => {
                     </Swiper>
                 </div>
             </div>
-        // </div>
     );
 };
 

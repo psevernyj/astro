@@ -25,7 +25,8 @@
     border-radius: 47.409px;
     box-shadow: 8.051px 24.152px 89.45px -11.629px rgba(22, 52, 80, 0.10);
     padding: 30px 20px;
-    max-width: 300px;
+    width: 100%;
+    min-width: 160px;
     height: 200px;
     background-color: $light-gray;
 
@@ -60,5 +61,21 @@
         }
       }
   }
-
+  @media only screen and (max-width: 900px){
+    .mapPoints{
+      gap: 0;
+    }
+  }
+  @media only screen and (max-width: 650px){
+    .mapPoints{
+      flex-direction: column;
+    }
+    .point{
+      height: 130px;
+      padding: 30px 40px;
+      &:nth-child(2){
+        transform: rotate(180deg);
+      }
+    }
+  }
 }
